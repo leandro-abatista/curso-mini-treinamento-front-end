@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap');
+
+body {
+	background: #D3D3D3;
+	font-family:  ubuntu;
+	text-transform: uppercase;/*DEIXA OS TEXTOS DA PÁGINA EM MAIÚSCULO*/
+	font-size: 16px;/*TAMANHO PADRÃO*/
+}
+
+label{
+	font: 20px bold;
+}
+
+input{
+	width: 15rem;
+	height: 20px;
+	font: 20px bold;
+}
+
+.tabelaForm{
+	background: #eee;
+	border-radius: 5px;
+	/*config margin 1º top, 2º left, 3º bottom, 4º right*/
+	margin: 10rem 30rem 10rem 30rem;
+	border: 5px solid #6A5ACD;
+	height: 17rem;
+	width: 22rem;
+	box-shadow: 5px 5px 5px #483D8B;
+	padding: 8px 8px 8px 8px;
+}
+
+.botaoSalvar {
+	background: #0066A2;/*cor de fundo do elemento, Define a cor de fundo, atrás do texto.*/
+	color: white;/*cor da fonte*/
+	border-style: solid;/*estilo da borda, Define o estilo da borda do seu botão de envio.*/
+	border-color: #0066A2;/*cor da borda, Define a cor da borda do seu botão de envio.*/
+	height: 35px;/*altura do elemento*/
+	width: 120px;/*largura do elemento*/
+	font: 20px ubuntu;/*aumenta ou diminue o tamanho da fonte dentro do elemento*/
+	text-shadow: none;
+	border-radius: 5px;
+	margin-top: 0.8rem;
+	margin-left: 12rem;
+	margin-bottom: .3rem;
+	
+}
+
+/*BOTAÕ COM EFEITO HOVER*/
+.botaoSalvar:hover {/* Essa propriedade faz com que o botão se altere quando o mouse passa sobre o botão. Os demais campos permanecem inalterados,
+ exceto o fundo, para mostrar o que acontece quando o mouse passa.*/
+	background: #00FF00;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 5px;/*Arredonda as bordas do seu botão.*/
+	box-shadow: 2px 2px 2px #32CD32;/*Coloca uma sombra no seu botão de envio.*/
+	text-shadow: none;/*(não foi aplicado no exemplo) – Coloca uma sombra no texto dentro do seu botão de envio.*/
+	color: black;
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="ISO-8859-1">
+<title>Mini Curso Front-end</title>
+
+<link rel="stylesheet" href="resources/estilo.css">
+</head>
+<body>
+	<!-- Mini curso front-end -->
+	
+	
+
+	<form id="formcadastro" onsubmit="return validarDadosDoFormulario() ? true : false">
+
+		<table class="tabelaForm" id="table">
+
+			<tr>
+				<td>
+				<label for="nome">Nome:</label> 
+				<input type="text" id="nome" name="nome" /></td>
+			</tr>
+
+			<tr>
+				<td>
+				<label for="login">Login:</label> 
+				<input type="text" id="login" name="login" /></td>
+			</tr>
+
+			<tr>
+				<td>
+				<label for="senha">Senha:</label> 
+				<input type="password" id="senha" name="senha" /></td>
+			</tr>
+			
+			<tr>
+				<td><input class="botaoSalvar" type="submit" value="Salvar"
+				 /></td>
+			</tr>
+
+		</table>
+	</form>
+	
+	<script type="text/javascript">
+
+		function validarDadosDoFormulario() {
+			
+			var nome = document.getElementById("nome").value;
+			var login = document.getElementById("login").value;
+			var senha = document.getElementById("senha").value;
+			
+			if (nome == '') {
+				alert("informe um nome");
+				return false;
+			} else if (login == '') {
+				alert("informe um login");
+				return false;
+			} else if (senha == '') {
+				alert("informe um senha");
+				return false;
+			}
+
+			return true;
+		}
+	</script>
+
+</body>
+</html>
